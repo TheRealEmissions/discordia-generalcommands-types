@@ -1,10 +1,10 @@
 import { CommandInteraction } from "discord.js";
-import App from "../../App";
-import { BaseCommand } from "../BaseCommand";
-import HelpLang from "../../lang/Help";
+import App from "../../App.js";
+import { BaseCommand } from "../BaseCommand.js";
+import HelpLang from "../../lang/Help.js";
 export declare class HelpCommand extends BaseCommand {
-    Lang: HelpLang;
+    static Lang: HelpLang;
     constructor(App: App);
-    help(int: CommandInteraction): Promise<void>;
+    static help(int: CommandInteraction): Promise<void>;
 }
 export default HelpCommand;

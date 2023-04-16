@@ -1,5 +1,5 @@
-import App from "../App";
-import { BaseLang } from "./BaseLang";
+import App from "../App.js";
+import { BaseLang } from "./BaseLang.js";
 import { SlashCommandBuilder } from "@discordjs/builders";
 declare class HelpLang extends BaseLang {
     constructor(App: App);

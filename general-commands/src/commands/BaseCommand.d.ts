@@ -1,9 +1,10 @@
-import App from "../App";
-import { ICommand } from "./interfaces/ICommand";
-import { BaseLang } from "../lang/BaseLang";
+import App from "../App.js";
+import { ICommand } from "./interfaces/ICommand.js";
+import { BaseLang } from "../lang/BaseLang.js";
 export declare abstract class BaseCommand implements ICommand {
-    App: App;
-    Lang: BaseLang;
-    constructor(App: App);
-    get [Symbol.toStringTag](): string;
+    static App: App;
+    static Lang: BaseLang;
+    constructor(App: App, im: string);
+    private load;
+    private getFolderName;
 }

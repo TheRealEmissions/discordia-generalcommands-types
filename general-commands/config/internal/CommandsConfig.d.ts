@@ -1,2 +1,2 @@
-import { ICommandsConfig } from "./interfaces/ICommandsConfig";
+import { ICommandsConfig } from "./interfaces/ICommandsConfig.js";
 export declare const CommandsConfig: ICommandsConfig;
